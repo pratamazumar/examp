@@ -1,0 +1,873 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\Pratama
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 172
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 41
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 7083
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 17
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 481
+    content: 'PS C:\Users\Pratama> '
+  - delay: 1436
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93mm\e[?25h"
+  - delay: 211
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 225
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;22Hmyw\e[?25h"
+  - delay: 905
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[6;22Hmy\e[m \b\e[?25h"
+  - delay: 587
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;22Hmys\e[?25h"
+  - delay: 343
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;22Hmysq\e[?25h"
+  - delay: 669
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;22Hmysql\e[?25h"
+  - delay: 763
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;22Hmysql\e[m \e[?25h"
+  - delay: 456
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-\e[?25h"
+  - delay: 645
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[?25h"
+  - delay: 208
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 242
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 163
+    content: "\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 130
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 81
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 587
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 347
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 1285
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;22Hmysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 1847
+    content: "\e[m\r\n"
+  - delay: 286
+    content: 'Enter password: '
+  - delay: 3684
+    content: '*'
+  - delay: 132
+    content: '*'
+  - delay: 233
+    content: '*'
+  - delay: 134
+    content: '*'
+  - delay: 172
+    content: '*'
+  - delay: 399
+    content: '*'
+  - delay: 231
+    content: '*'
+  - delay: 157
+    content: '*'
+  - delay: 208
+    content: '*'
+  - delay: 450
+    content: "\r\n"
+  - delay: 67
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 19
+    content: "\r\nYour MariaDB connection id is 7\e[47X\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[33X\r\n\e[78X\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[10X\r\n\e[78X\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\e[78X\r\nMariaDB [(none)]> \e[60X"
+  - delay: 3651
+    content: u
+  - delay: 102
+    content: s
+  - delay: 150
+    content: e
+  - delay: 1427
+    content: ' '
+  - delay: 420
+    content: p
+  - delay: 175
+    content: e
+  - delay: 142
+    content: m
+  - delay: 171
+    content: i
+  - delay: 173
+    content: 'n'
+  - delay: 176
+    content: j
+  - delay: 133
+    content: a
+  - delay: 75
+    content: m
+  - delay: 946
+    content: a
+  - delay: 165
+    content: 'n'
+  - delay: 828
+    content: _
+  - delay: 740
+    content: a
+  - delay: 124
+    content: l
+  - delay: 91
+    content: a
+  - delay: 204
+    content: t
+  - delay: 5552
+    content: "\r\n"
+  - delay: 22
+    content: "Database changed\e[11X\r\nMariaDB [peminjaman_alat]> "
+  - delay: 7086
+    content: s
+  - delay: 1147
+    content: "\b \b"
+  - delay: 220
+    content: d
+  - delay: 175
+    content: e
+  - delay: 235
+    content: s
+  - delay: 757
+    content: c
+  - delay: 221
+    content: ' '
+  - delay: 214
+    content: u
+  - delay: 118
+    content: s
+  - delay: 158
+    content: e
+  - delay: 195
+    content: r
+  - delay: 185
+    content: s
+  - delay: 721
+    content: ;
+  - delay: 237
+    content: "\r\n"
+  - delay: 93
+    content: +---------+--------------+------+-----+---------+----------------+
+  - delay: 20
+    content: "\r\n| Field   | Type         | Null | Key | Default | Extra          |\r\n+---------+--------------+------+-----+---------+----------------+\r\n| id_user | int(11)      | NO   | PRI | NULL    | auto_increment |\r\n| nama    | varch\e[49X"
+  - delay: 17
+    content: "\r| nama    | varchar(100) | NO   |     | NULL    |                |\r\n| kelas   | varchar\e[47X"
+  - delay: 15
+    content: "\r| kelas   | varchar(50)  | YES  |     | NULL    |                |\r\n| no_hp   | varchar(15)  | \e[39X"
+  - delay: 15
+    content: "\r| no_hp   | varchar(15)  | YES  |     | NULL    |                |\r\n+---------+--------------+------+-----+---------+----------------+\r\n4 rows in set (0.097 sec)\e[41X\r\n\e[66X\r\nMariaDB [peminjaman_alat]> \e[39X"
+  - delay: 13031
+    content: s
+  - delay: 142
+    content: e
+  - delay: 163
+    content: l
+  - delay: 59
+    content: e
+  - delay: 621
+    content: c
+  - delay: 172
+    content: t
+  - delay: 1054
+    content: ' '
+  - delay: 757
+    content: '*'
+  - delay: 701
+    content: ' '
+  - delay: 232
+    content: f
+  - delay: 185
+    content: r
+  - delay: 178
+    content: o
+  - delay: 967
+    content: m
+  - delay: 3362
+    content: ' '
+  - delay: 231
+    content: u
+  - delay: 123
+    content: s
+  - delay: 167
+    content: e
+  - delay: 182
+    content: r
+  - delay: 177
+    content: s
+  - delay: 696
+    content: ;
+  - delay: 286
+    content: "\r\n"
+  - delay: 12
+    content: "+---------+-------+-------+--------------+\r\n| id_user | nama  | kelas | no_hp        |\r\n+---------+-------+-------+--------------+\r\n|       1 | hayes | 11    | 089501070063 |\r\n+---------+-------+-------+--------------+\r\n1 row in set (0.000 sec)\e[18X\r\n\e[42X\r\nMariaDB [peminjaman_alat]> \e[15X"
+  - delay: 2878
+    content: i
+  - delay: 217
+    content: 'n'
+  - delay: 131
+    content: s
+  - delay: 187
+    content: e
+  - delay: 247
+    content: r
+  - delay: 208
+    content: t
+  - delay: 421
+    content: ' '
+  - delay: 202
+    content: i
+  - delay: 145
+    content: 'n'
+  - delay: 162
+    content: t
+  - delay: 2052
+    content: o
+  - delay: 889
+    content: ' '
+  - delay: 243
+    content: u
+  - delay: 113
+    content: s
+  - delay: 129
+    content: e
+  - delay: 179
+    content: r
+  - delay: 173
+    content: s
+  - delay: 212
+    content: ' '
+  - delay: 926
+    content: (
+  - delay: 1635
+    content: 'n'
+  - delay: 123
+    content: a
+  - delay: 113
+    content: m
+  - delay: 90
+    content: a
+  - delay: 544
+    content: ','
+  - delay: 188
+    content: ' '
+  - delay: 249
+    content: k
+  - delay: 358
+    content: e
+  - delay: 195
+    content: l
+  - delay: 118
+    content: a
+  - delay: 129
+    content: s
+  - delay: 4216
+    content: ','
+  - delay: 1933
+    content: ' '
+  - delay: 196
+    content: 'n'
+  - delay: 292
+    content: o
+  - delay: 1308
+    content: _
+  - delay: 666
+    content: h
+  - delay: 153
+    content: p
+  - delay: 810
+    content: )
+  - delay: 3637
+    content: ' '
+  - delay: 257
+    content: v
+  - delay: 176
+    content: a
+  - delay: 85
+    content: l
+  - delay: 194
+    content: u
+  - delay: 96
+    content: e
+  - delay: 143
+    content: s
+  - delay: 983
+    content: ' '
+  - delay: 1976
+    content: (
+  - delay: 4619
+    content: '''t'
+  - delay: 149
+    content: a
+  - delay: 138
+    content: m
+  - delay: 91
+    content: a
+  - delay: 2244
+    content: ''','
+  - delay: 156
+    content: ' '
+  - delay: 2218
+    content: '''1'
+  - delay: 133
+    content: '2'
+  - delay: 3933
+    content: ''','
+  - delay: 759
+    content: ' '
+  - delay: 3500
+    content: '''0'
+  - delay: 1007
+    content: '8'
+  - delay: 208
+    content: '8'
+  - delay: 254
+    content: '9'
+  - delay: 415
+    content: '6'
+  - delay: 328
+    content: '5'
+  - delay: 277
+    content: '6'
+  - delay: 240
+    content: '7'
+  - delay: 219
+    content: '8'
+  - delay: 207
+    content: '9'
+  - delay: 225
+    content: '0'
+  - delay: 929
+    content: '0'
+  - delay: 626
+    content: '9'
+  - delay: 2796
+    content: ''')'
+  - delay: 2206
+    content: k
+  - delay: 968
+    content: "\b \b"
+  - delay: 550
+    content: ;
+  - delay: 712
+    content: "\r\n"
+  - delay: 46
+    content: 'Query OK, 1 row affected (0.046 sec)'
+  - delay: 10
+    content: "\e[25l\e[40;1HMariaDB [peminjaman_alat]> \e[?25h"
+  - delay: 2733
+    content: c
+  - delay: 248
+    content: r
+  - delay: 125
+    content: e
+  - delay: 195
+    content: a
+  - delay: 195
+    content: t
+  - delay: 206
+    content: e
+  - delay: 652
+    content: ' '
+  - delay: 129
+    content: t
+  - delay: 141
+    content: a
+  - delay: 123
+    content: b
+  - delay: 289
+    content: l
+  - delay: 565
+    content: e
+  - delay: 2121
+    content: ' '
+  - delay: 4077
+    content: 'n'
+  - delay: 137
+    content: a
+  - delay: 96
+    content: m
+  - delay: 108
+    content: a
+  - delay: 1140
+    content: _
+  - delay: 559
+    content: b
+  - delay: 71
+    content: a
+  - delay: 132
+    content: r
+  - delay: 125
+    content: a
+  - delay: 153
+    content: 'n'
+  - delay: 150
+    content: g
+  - delay: 1117
+    content: ;
+  - delay: 2195
+    content: "\b \b"
+  - delay: 406
+    content: ' '
+  - delay: 507
+    content: (
+  - delay: 13460
+    content: ' '
+  - delay: 164
+    content: i
+  - delay: 179
+    content: d
+  - delay: 855
+    content: _
+  - delay: 667
+    content: b
+  - delay: 69
+    content: a
+  - delay: 289
+    content: a
+  - delay: 842
+    content: "\b \b"
+  - delay: 209
+    content: r
+  - delay: 98
+    content: a
+  - delay: 208
+    content: 'n'
+  - delay: 160
+    content: g
+  - delay: 4959
+    content: ' '
+  - delay: 1592
+    content: i
+  - delay: 265
+    content: 'n'
+  - delay: 189
+    content: t
+  - delay: 222
+    content: ' '
+  - delay: 398
+    content: p
+  - delay: 196
+    content: r
+  - delay: 155
+    content: i
+  - delay: 226
+    content: m
+  - delay: 53
+    content: a
+  - delay: 263
+    content: r
+  - delay: 213
+    content: 'y'
+  - delay: 533
+    content: ' '
+  - delay: 186
+    content: k
+  - delay: 261
+    content: e
+  - delay: 184
+    content: 'y'
+  - delay: 323
+    content: ' '
+  - delay: 135
+    content: a
+  - delay: 176
+    content: u
+  - delay: 204
+    content: t
+  - delay: 246
+    content: o
+  - delay: 939
+    content: _
+  - delay: 650
+    content: i
+  - delay: 228
+    content: 'n'
+  - delay: 235
+    content: c
+  - delay: 233
+    content: r
+  - delay: 139
+    content: e
+  - delay: 199
+    content: m
+  - delay: 78
+    content: e
+  - delay: 112
+    content: 'n'
+  - delay: 185
+    content: t
+  - delay: 6325
+    content: ','
+  - delay: 1577
+    content: ' '
+  - delay: 347
+    content: 'n'
+  - delay: 145
+    content: a
+  - delay: 91
+    content: m
+  - delay: 86
+    content: a
+  - delay: 679
+    content: _
+  - delay: 617
+    content: b
+  - delay: 81
+    content: a
+  - delay: 201
+    content: r
+  - delay: 130
+    content: a
+  - delay: 148
+    content: 'n'
+  - delay: 169
+    content: g
+  - delay: 1765
+    content: ' '
+  - delay: 506
+    content: v
+  - delay: 153
+    content: a
+  - delay: 187
+    content: r
+  - delay: 279
+    content: c
+  - delay: 168
+    content: h
+  - delay: 96
+    content: a
+  - delay: 124
+    content: r
+  - delay: 845
+    content: (
+  - delay: 564
+    content: '1'
+  - delay: 133
+    content: '0'
+  - delay: 152
+    content: '0'
+  - delay: 421
+    content: )
+  - delay: 864
+    content: ','
+  - delay: 13491
+    content: ' '
+  - delay: 156
+    content: j
+  - delay: 185
+    content: u
+  - delay: 199
+    content: m
+  - delay: 612
+    content: l
+  - delay: 197
+    content: a
+  - delay: 170
+    content: h
+  - delay: 694
+    content: ' '
+  - delay: 756
+    content: i
+  - delay: 156
+    content: 'n'
+  - delay: 158
+    content: t
+  - delay: 4918
+    content: "\b"
+  - delay: 530
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 190
+    content: "\b"
+  - delay: 194
+    content: "\b"
+  - delay: 168
+    content: "\b"
+  - delay: 202
+    content: "\b"
+  - delay: 1023
+    content: "\e[25l\e[40;28Hcreate table nama_barang ( id_barang int primary key auto_increment, nama_barang varchar(10), jumlah int  \e[40;119H\e[?25h"
+  - delay: 1604
+    content: "\e[25l\e[40;28Hcreate table nama_barang ( id_barang int primary key auto_increment, nama_barang varchar(100), jumlah int\e[40;120H\e[?25h"
+  - delay: 685
+    content: "\e[1C"
+  - delay: 341
+    content: "\e[25l\e[40;28Hcreate table nama_barang ( id_barang int primary key auto_increment, nama_barang varchar(100, jumlah int  \e[40;120H\e[?25h"
+  - delay: 3668
+    content: "\e[25l\e[40;28Hcreate table nama_barang ( id_barang int primary key auto_increment, nama_barang varchar(100), jumlah int\e[40;121H\e[?25h"
+  - delay: 666
+    content: "\e[1C"
+  - delay: 169
+    content: "\e[1C"
+  - delay: 683
+    content: "\e[1C"
+  - delay: 216
+    content: "\e[1C"
+  - delay: 331
+    content: "\e[1C"
+  - delay: 531
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 214
+    content: "\e[1C"
+  - delay: 204
+    content: "\e[1C"
+  - delay: 2578
+    content: "\e[1C"
+  - delay: 1174
+    content: )
+  - delay: 1498
+    content: ;
+  - delay: 14144
+    content: "\r\n"
+  - delay: 216
+    content: "Query OK, 0 rows affected (0.215 sec)\r\n"
+  - delay: 27
+    content: "\nMariaDB [peminjaman_alat]>\e[1C"
+  - delay: 4322
+    content: d
+  - delay: 167
+    content: e
+  - delay: 208
+    content: s
+  - delay: 669
+    content: c
+  - delay: 929
+    content: ' '
+  - delay: 247
+    content: 'n'
+  - delay: 120
+    content: a
+  - delay: 112
+    content: m
+  - delay: 81
+    content: a
+  - delay: 660
+    content: _
+  - delay: 618
+    content: b
+  - delay: 102
+    content: a
+  - delay: 139
+    content: r
+  - delay: 129
+    content: a
+  - delay: 150
+    content: 'n'
+  - delay: 150
+    content: g
+  - delay: 612
+    content: "\r\n"
+  - delay: 20
+    content: '    -> '
+  - delay: 1448
+    content: ;
+  - delay: 221
+    content: "\r\n"
+  - delay: 18
+    content: "+-------------+--------------+------+-----+---------+----------------+\r\n| Field       | Type         | Null | Key | Default | Extra          |\r\n+-------------+--------------+------+-----+---------+----------------+\r\n| id_barang   | int(11)      | NO   | PRI | NULL    | auto_increment |"
+  - delay: 5
+    content: "\r\n| nama_barang | varchar(100) | YES  |     | NULL    |                |\r\n| jumlah      | int(11)      | YES  |     | NULL    |                |\r\n+-------------+--------------+------+-----+---------+----------------+\r\n3 rows in set (0.017 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [peminjaman_alat]>\e[1C"
+  - delay: 6637
+    content: e
+  - delay: 226
+    content: x
+  - delay: 1457
+    content: i
+  - delay: 616
+    content: t
+  - delay: 1132
+    content: "\r\nBye"
+  - delay: 12
+    content: "\r\n"
+  - delay: 321
+    content: 'PS C:\Users\Pratama> '
+  - delay: 1193
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93me\e[?25h"
+  - delay: 212
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\bex\e[?25h"
+  - delay: 286
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[41;22Hexk\e[?25h"
+  - delay: 969
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[41;22Hex\e[m \b\e[?25h"
+  - delay: 373
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[41;22Hexi\e[?25h"
+  - delay: 365
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[92m\e[41;22Hexit\e[?25h"
+  - delay: 862
+    content: "\e[25l\e[m\e[HDatabase changed\e[K\r\nMariaDB [peminjaman_alat]> desc users;\e[K\r\n+---------+--------------+------+-----+---------+----------------+\e[K\r\n| Field   | Type         | Null | Key | Default | Extra          |\e[K\r\n+---------+--------------+------+-----+---------+----------------+\e[K\r\n| id_user | int(11)      | NO   | PRI | NULL    | auto_increment |\e[K\r\n| nama    | varchar(100) | NO   |     | NULL    |                |\e[K\r\n| kelas   | varchar(50)  | YES  |     | NULL    |                |\e[K\r\n| no_hp   | varchar(15)  | YES  |     | NULL    |                |\e[K\r\n+---------+--------------+------+-----+---------+----------------+\e[K\r\n4 rows in set (0.097 sec)\e[K\r\n\e[K\r\nMariaDB [peminjaman_alat]> select * from users;\e[K\r\n+---------+-------+-------+--------------+\e[K\r\n| id_user | nama  | kelas | no_hp        |\e[K\r\n+---------+-------+-------+--------------+\e[K\r\n|       1 | hayes | 11    | 089501070063 |\e[K\r\n+---------+-------+-------+--------------+\e[K\r\n1 row in set (0.000 sec)\e[K\r\n\e[K\r\nMariaDB [peminjaman_alat]> insert into users (nama, kelas, no_hp) values ('tama', '12', '0889656789009');\e[K\r\nQuery OK, 1 row affected (0.046 sec)\e[K\r\n\e[K\r\nMariaDB [peminjaman_alat]> create table nama_barang ( id_barang int primary key auto_increment, nama_barang varchar(100), jumlah int);\e[K\r\nQuery OK, 0 rows affected (0.215 sec)\e[K\r\n\e[K\r\nMariaDB [peminjaman_alat]> desc nama_barang\e[K\r\n    -> ;\e[K\r\n+-------------+--------------+------+-----+---------+----------------+\e[K\r\n| Field       | Type         | Null | Key | Default | Extra          |\e[K\r\n+-------------+--------------+------+-----+---------+----------------+\e[K\r\n| id_barang   | int(11)      | NO   | PRI | NULL    | auto_increment |\e[K\r\n| nama_barang | varchar(100) | YES  |     | NULL    |                |\e[K\r\n| jumlah      | int(11)      | YES  |     | NULL    |                |\e[K\r\n+-------------+--------------+------+-----+---------+----------------+\e[K\r\n3 rows in set (0.017 sec)\e[K\r\n\e[K\r\nMariaDB [peminjaman_alat]> exit\e[K\r\nBye\e[K\r\nPS C:\\Users\\Pratama> \e[92mexit\e[m\e[K\r\n\e[K\e[25C\e[?25h"
+  - delay: 14
+    content: "\r"
